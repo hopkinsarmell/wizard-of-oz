@@ -359,6 +359,12 @@ nav.accordian-nav {
 }
 
 
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* ***********************************  END Accordion Button Info from w3 schools **************************************/
 
 
