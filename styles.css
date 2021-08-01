@@ -1,0 +1,508 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display:block;
+}
+
+
+html {
+	animation: toColor 10s;
+	animation-fill-mode: forwards;
+}
+
+body {
+	background-image: url("images/backgrounds/emerald.jpg");
+	height: 100%;
+	width: 100%;
+  background-repeat: repeat;
+	overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* flexbox for contents within the main */
+
+main.different {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+
+
+/********************* Hamburger Menu Styling  ************************/
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:8px;
+  right:6px;
+  line-height:45px;
+  padding:1% 2%;
+  color:#ffffff;
+  border:0;
+  font-size:3rem;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:13px;
+  right:-2px;
+  padding:1.9% 6%;
+  color:#000000;
+  border:0;
+  font-size:6rem;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu {z-index:1000000; font-weight:600; font-size:0.8em; 	font-family: 'Abel', sans-serif; width:100%; background:#ffffff;  position:absolute; text-align:center; font-size:1.2rem;}
+.menu ul {margin: 0; padding: 0; background-color: #ffeb60; list-style-type: none; list-style-image: none;}
+.menu li {display: block; padding: 25px 0 25px 0;; border-bottom:#dac14e 5px solid;}
+.menu ul li a { text-decoration:none; margin: 0px; color:#666;}
+.menu a{text-decoration:none; color:#2f2f2f;}
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #2f2f2f;
+}
+
+
+/*******************NAVIGATION HIDDEN****************/
+
+.header-nav {
+	display: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #2f2f2f;
+  font-family: 'Henny Penny';
+  font-weight: bold;
+}
+
+
+h2 {
+  font-size: 1.9rem;
+  font-family: 'Henny Penny', cursive;
+  color: #864e19;
+}
+
+
+
+li {
+  display: inline-flex;
+  padding: 15px;
+}
+
+p {
+  font: 1rem sans-serif;
+  padding: 0px 6% 40px 6%;
+  color: #735648;
+  line-height: 1.6;
+}
+
+
+/* styling on aside's headline */
+
+.feature-film {
+	color: #fffffc;
+	margin-bottom: 28px;
+}
+
+
+/* name styling on the aside's quotes */
+
+span.p-style {
+  color: #e4c42a;
+  margin-top: 11px;
+  display: block;
+}
+
+/* quote styling on the aside */
+
+.quote {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: arial;
+	margin-top: 10px;
+	line-height: 18px;
+}
+
+
+
+
+/* logo container and styling */
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  max-width: 300px;
+  width: 79%;
+  margin: 70px 0 19px 0;
+}
+
+
+
+/* hide used for event listeners */
+
+.hide {
+	display: none;
+}
+
+/* styling for aside gif images */
+
+#teamgif, #dorothygif, #tinmangif, #scarecrowgif, #liongif {
+  border: 2px solid #0b5a28;
+  border-radius: 40px;
+  max-width: 263px;
+  width: 89%;
+}
+
+
+/* aside removed until larger screen-size */
+
+aside {
+	display: none;
+}
+
+.aside-container {
+	display: none;
+}
+
+
+
+img.oz {
+  width: 85%;
+  max-height: 400px;
+  max-width: 900px;
+  border-radius: 56px;
+  border: solid 6px #dddddd;
+  box-shadow: -1px 2px 40px #0000009c;
+  margin-top: 11px;
+}
+
+/* container related to the witch, house, and hero image */
+
+.contain{
+  width:100%;
+}
+
+/* the hero image */
+
+.oz{
+  height:100%;
+  width:100%;
+	max-width: 900px;
+	margin-bottom: 23px;
+  background-position:center;
+ 	animation: toColor 10s;
+  animation-fill-mode: forwards;
+}
+
+/*keyframe for the website's sepia color change */
+
+@keyframes toColor {
+  0%    { -webkit-filter: sepia(100%); filter: sepia(100%); }
+  25%   { -webkit-filter: sepia(75%); filter: sepia(75%); }
+  50%   { -webkit-filter: sepia(50%); filter: sepia(50%); }
+  75%   { -webkit-filter: sepia(25%); filter: sepia(25%); }
+  100%  { -webkit-filter: sepia(0%); filter: sepia(0%); }
+}
+
+
+.witch {
+  position: absolute;
+  left: -70%;
+  top: 8%;
+  height: auto;
+  max-width: 200px;
+  width: 50%;
+  animation-name: glide;
+  animation-duration: 12s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+}
+
+.house {
+	display: none;
+}
+
+
+/* keyframe for witch gliding on the x-axis */
+
+@keyframes glide {
+
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(3500px);
+  }
+}
+
+
+
+/* logomark #2 shoes in the footer */
+
+.shoes-container {
+	margin-top: 113px;
+	background: #2f2f2f;
+	padding-top: 44px;
+}
+
+.shoes {
+	display: block;
+  width: 30%;
+  max-width: 90px;
+  margin: 16px auto 28px;
+  background: #359a3c;
+  border-radius: 100%;
+  padding: 27px;
+}
+
+/* footer credits */
+
+.credit-h2 {
+	font-size: 1.9rem;
+  font-family: 'Henny Penny', cursive;
+  color: #ffffff;
+  text-align: center;
+}
+
+.credits {
+  list-style: none;
+  color: #dddddd;
+	font: bold 1rem sans-serif;
+  padding: 5px 0 58px 0;
+  border-radius: 106px;
+  text-align: center;
+}
+
+	/* *********************************** START Accordion Button Info from w3 schools **************************************/
+
+/* This is the container of the buttons */
+nav.accordian-nav {
+  background: red;
+	width: 90%;
+  border-radius: 34px;
+  background-image: url("images/backgrounds/paper.jpg");
+	margin: 0 20px;
+	overflow-y: hidden;
+}
+
+/* 'characters' h1 on the accordion */
+
+.accordian-h1 {
+  font-family: 'Henny Penny';
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 26px 0 15px;
+  color: #ffffff;
+  border-bottom: 3px dashed #f4e1c3;
+	border-radius: 32px 32px 0 0;
+  background: #2f2f2f;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background: url("images/backgrounds/paper.jpg") repeat fixed;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  border-bottom: 1px solid;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.5em;
+  font-family: 'Henny Penny';
+  text-decoration: none;
+  box-shadow: 1px 7px 7px -4px #73614c;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background: url("images/backgrounds/paper.jpg") repeat fixed;
+	font-weight: bold
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	background: url("images/backgrounds/paper.jpg") repeat fixed;
+  padding: 8%;
+	font-size: 1.25em;
+	line-height: 1.5em;
+  display: none;
+  overflow: hidden;
+}
+
+
+/* ***********************************  END Accordion Button Info from w3 schools **************************************/
+
+
+
+/* ******************************** 760px QUERY STARTS *************************** */
+
+@media (min-width: 760px) {
+
+	img.oz {
+		margin-top: 0;
+	}
+
+}
+
+/* ******************************** 760px QUERY ENDS *************************** */
+
+/* ******************************** 999px QUERY STARTS *************************** */
+
+@media (min-width: 999px) {
+
+	/***** Hamburger Menu Removed ****/
+
+	.hamburger, .cross, .menu ul{
+		display: none;
+	}
+
+	/***** Hamburger Menu Removed ****/
+
+	.header-nav {
+		display: block;
+	}
+
+
+	nav li a {
+		background: none;
+		font-weight: normal;
+		color: white;
+		font-size: 1.4rem;
+		text-decoration: none;
+		margin-top: 24px;
+		font-family: 'Henny Penny';
+	}
+
+
+
+		/* Change the link color to #111 (black) on hover */
+	li a:hover {
+		text-decoration: underline;
+		color: #111111;
+	}
+
+	main.different {
+	  width: 90.5%;
+	  max-width: 1000px;
+	  margin: 31px auto auto;
+	}
+
+	aside, .aside-container {
+		display: block;
+	}
+
+	aside {
+	    max-width: 370px;
+	}
+
+	aside.movie-info {
+		max-width: 364px;
+		margin: 0;
+	}
+
+	aside.movie-info, #dorothyside, #tinside, #scarecrowside, #lionside, #teamside {
+	  background: #2f2f2f;
+	  text-align: center;
+	  border-left: 12px dashed white;
+	  border-right: 12px dashed white;
+	  padding: 50px 4%;
+	  margin: 0px auto;
+	}
+
+	article.parchment {
+	  margin-right: 29px;
+	}
+
+	img.oz {
+		max-width: 1000px;
+	}
+
+	.shoes-container {
+		margin-top: 113px;
+	  background: #2f2f2f;
+	  padding-top: 44px;
+	}
+
+
+	.house {
+	  display: block;
+	  position: absolute;
+	  width: 31%;
+	  left: 29%;
+	  top: 25vh;
+	  height: auto;
+	  width: 18%;
+	  background-size: contain;
+	  animation: fall .5s;
+	  animation-fill-mode: forwards;
+	}
+
+
+	@keyframes fall {
+
+    from {
+      transform: translateY(-100px);
+    }
+    to { transform: translateY(300px);}
+  }
+
+	.witch {
+		animation-duration: 7s;
+	}
+}
+
+/* ******************************** 999px QUERY ENDS *************************** */
+
+/* ******************************** 1400px QUERY STARTS *************************** */
+
+
+@media (min-width: 1400px) {
+
+	.house {
+		left: 29%;
+		top: 20vh;
+	}
+
+}
+/* ******************************** 1400px QUERY ENDS *************************** */
+
+/* ******************************** 1900px QUERY STARTS *************************** */
+
+
+@media (min-width: 1900px) {
+
+	.house {
+		left: 29%;
+		top: 15vh;
+	}
+}
+/* ******************************** 1900px QUERY ENDS *************************** */
