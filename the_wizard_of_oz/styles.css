@@ -472,19 +472,19 @@ img.center {
 	  animation-fill-mode: forwards;
 	}
 
-
-	@keyframes fall {
+}
+@keyframes fall {
 
     from {
       transform: translateY(-100px);
     }
-    to { transform: translateY(300px);}
+    to { transform: translateY(300px);
   }
-
+}
 	.witch {
 		animation-duration: 7s;
 	}
-}
+
 
 /* ******************************** 999px QUERY ENDS *************************** */
 
